@@ -80,7 +80,7 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ## Jawaban Soal 4
 
-## Soal 5
+## Soal 5 (Revisi)
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 
 a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
@@ -90,7 +90,7 @@ b. Port berapakah pada server yang digunakan untuk service SMTP?
 c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 
 
-## Jawaban Soal 5
+## Jawaban Soal 5 (Revisi)
 Gunakan tools follow TCP stream pada wireshark untuk mendapatkan password untuk membuka folder yang dikunci. Kemudian didapatkan password yang harus dilakukan decode terlebih dahulu dengan menggunakan Base64 yaitu
 ```
 NWltcGxlUGFzNXdvcmQ=
@@ -128,9 +128,9 @@ Setelah menyambukan nc yang telah didapatkan dan menjawab seluruh pertanyaan, ak
 
 ![soal5_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/8deade6d-2988-48f2-a358-636170367033)
 
-## Soal 6
+## Soal 6 (Revisi)
 
-## Jawaban Soal 6
+## Jawaban Soal 6 (Revisi)
 
 ## Soal 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
