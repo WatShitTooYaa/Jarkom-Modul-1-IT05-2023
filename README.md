@@ -44,6 +44,8 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/5406f6f1-1604-4a7d-bfb5-9ee0c5ab789b)
 
+## Kendala yang dialami
+
 ## Soal 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
@@ -58,6 +60,9 @@ lalu nanti akan menemukan server dengan nama gunicorn yang merupakan nama web se
 lalu masukkan kedalam ncat nya
 
 ![2 3](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/da9ca94b-086e-4c49-a1c3-0ae8af4c2332)
+
+## Kendala yang dialami
+Karena tidak pernah mendengar web server gunicorn jadi ragu apa benar ini jawabannya atau bukan
 
 ## Soal 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
@@ -87,6 +92,8 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/ad818b73-e070-46ab-b498-a9af87a0407c)
 
+## Kendala yang dialami
+
 ## Soal 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
@@ -97,6 +104,8 @@ Pertama buka file pcap nya lalu cari paket ke 130, setelah itu cari checksum
 cari nilai checksum pada bagian kiri bawah lalu akan menemukan nilai dari checksum yaitu 0x18e5 lalu inputkan ke nc
 ![4 2](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/35fa8f79-4f87-459e-80ef-88a15eefed7f)
 
+## Kendala yang dialami
+Sempat mengira nilai checksum berbentuk hex jadi saya ubah dulu ke binary, ternyata error
 
 ## Soal 5 (Revisi)
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -146,9 +155,24 @@ Setelah menyambukan nc yang telah didapatkan dan menjawab seluruh pertanyaan, ak
 
 ![soal5_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/8deade6d-2988-48f2-a358-636170367033)
 
+## Kendala yang dialami
+
 ## Soal 6 (Revisi)
+Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
 ## Jawaban Soal 6 (Revisi)
+Pertama buka file wiresharknya lalu cari urutan ke 7812, nanti disana ada ip sourcenya yang bernilai 104.18.14.101
+![6 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/1269aa0a-2bac-43f2-9cbe-25ba95c836fe)
+
+lalu maksud dari hint a1 e5 u21 yaitu dimana value dari ip nya diganti ke huruf sesuai urutan huruf dimana a urutan ke-1 e urutan ke-5 dan u urutan ke-21. Berarti 10 = J, 4 = D, 18 = R, 14 = N, 10 = J, 1 =  A maka dihasilkan 
+```
+JDRNJA
+```
+lalu inputkan ke dalam nc nya
+![6 2](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/6ef5ee83-6905-4995-bef1-eb0d2285ae6d)
+
+## Kendala yang dialami
+Kehabisan waktu karena VPN tidak ada internet akses
 
 ## Soal 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
@@ -173,6 +197,8 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ![soal7_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/49c3c30b-231a-4705-aa95-85ef52ae9254)
 
+## Kendala yang dialami
+
 ## Soal 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
@@ -187,6 +213,8 @@ tcp.dstport == 80 || udp.dstport == 80
 
 menuliskan tcp dahulu karena jika terdapat 2 kueri maka di urut abjad dimana t lebih dahulu daripada u
 
+## Kendala yang dialami
+Sempat bingung karena menggunakan kueri tcp saja namun tidak bisa sehingga mecoba untuk menambah kueri udp ternyata bisa
 
 ## Soal 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
@@ -207,6 +235,8 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ![soal9_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/7336896b-d597-4e3a-b4dd-9dab3ad8036e)
 
+## Kendala yang dialami
+
 ## Soal 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
@@ -215,3 +245,6 @@ pertama buka file pcap nya, lalu pencet protocol untuk mengurutkan protokolnya. 
 ![10 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/2134ef9b-6bc0-4b80-b6cb-e41b0b66aca7)
 
 disini menemukan user:password yang benar yaitu dhafin:kesayangannyak0k0 lalu memasukkan nya ke nc
+
+## Kendala yang dialami
+Karena banyaknya user password pada wireshark jadi bingung mau mencoba yang mana 
