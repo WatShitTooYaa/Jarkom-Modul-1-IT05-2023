@@ -52,11 +52,12 @@ Pertama buka file pcap lalu cari protocol http lalu follow http stream
 ![2 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/05f4c03a-faf4-4ffc-a67f-6dcf01130c18)
 
 lalu nanti akan menemukan server dengan nama gunicorn yang merupakan nama web server yang digunakan
+
 ![2 2](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/8df1f22f-6e53-46a2-b0c5-ffaacd7a14d8)
 
 lalu masukkan kedalam ncat nya
-![2 3](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/da9ca94b-086e-4c49-a1c3-0ae8af4c2332)
 
+![2 3](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/da9ca94b-086e-4c49-a1c3-0ae8af4c2332)
 
 ## Soal 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
