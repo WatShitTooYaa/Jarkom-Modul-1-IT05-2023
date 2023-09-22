@@ -45,6 +45,7 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/5406f6f1-1604-4a7d-bfb5-9ee0c5ab789b)
 
 ## Kendala yang dialami
+Tidak ada
 
 ## Soal 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
@@ -93,6 +94,7 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/ad818b73-e070-46ab-b498-a9af87a0407c)
 
 ## Kendala yang dialami
+Tidak ada
 
 ## Soal 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -156,6 +158,7 @@ Setelah menyambukan nc yang telah didapatkan dan menjawab seluruh pertanyaan, ak
 ![soal5_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/8deade6d-2988-48f2-a358-636170367033)
 
 ## Kendala yang dialami
+Bingung karena tidak ada nc dan ternyata harus mencari password file zip terlebih dahulu. 
 
 ## Soal 6 (Revisi)
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
@@ -201,6 +204,8 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 
 ## Soal 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+## Kendala Yang Dialami
+Tidak ada
 
 ## Jawaban Soal 8
 Kueri yang bisa digunakan pada wireshark untuk mencari port 80 yaitu dengan cara tcp.dstport == 80 dan udp.dstport == 80. Karena kita ingin mencari keduanya maka menggunakan atau (||) dimana akan menapilkan mana yang menggunakan tcp dan udp. 
@@ -236,6 +241,7 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal9_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/7336896b-d597-4e3a-b4dd-9dab3ad8036e)
 
 ## Kendala yang dialami
+Tidak ada
 
 ## Soal 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
