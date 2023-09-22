@@ -45,8 +45,18 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/5406f6f1-1604-4a7d-bfb5-9ee0c5ab789b)
 
 ## Soal 2
+Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
 ## Jawaban Soal 2
+Pertama buka file pcap lalu cari protocol http lalu follow http stream
+![2 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/05f4c03a-faf4-4ffc-a67f-6dcf01130c18)
+
+lalu nanti akan menemukan server dengan nama gunicorn yang merupakan nama web server yang digunakan
+![2 2](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/8df1f22f-6e53-46a2-b0c5-ffaacd7a14d8)
+
+lalu masukkan kedalam ncat nya
+![2 3](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/da9ca94b-086e-4c49-a1c3-0ae8af4c2332)
+
 
 ## Soal 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
@@ -77,8 +87,15 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal1_Flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/ad818b73-e070-46ab-b498-a9af87a0407c)
 
 ## Soal 4
+Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 ## Jawaban Soal 4
+Pertama buka file pcap nya lalu cari paket ke 130, setelah itu cari checksum
+![4 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/762fbb19-e160-4e2a-9738-33a561401c1f)
+
+cari nilai checksum pada bagian kiri bawah lalu akan menemukan nilai dari checksum yaitu 0x18e5 lalu inputkan ke nc
+![4 2](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/35fa8f79-4f87-459e-80ef-88a15eefed7f)
+
 
 ## Soal 5 (Revisi)
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -156,8 +173,19 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal7_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/49c3c30b-231a-4705-aa95-85ef52ae9254)
 
 ## Soal 8
+Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
 ## Jawaban Soal 8
+Kueri yang bisa digunakan pada wireshark untuk mencari port 80 yaitu dengan cara tcp.dstport == 80 dan udp.dstport == 80. Karena kita ingin mencari keduanya maka menggunakan atau (||) dimana akan menapilkan mana yang menggunakan tcp dan udp. 
+![8 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/2cc53704-da67-4e73-b558-08a5b7b12c06)
+
+lalu masukkan ke nc 
+```
+tcp.dstport == 80 || udp.dstport == 80
+```
+
+menuliskan tcp dahulu karena jika terdapat 2 kueri maka di urut abjad dimana t lebih dahulu daripada u
+
 
 ## Soal 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
@@ -179,5 +207,10 @@ Maka, akan mendapatkan flag seperti gambar berikut.
 ![soal9_flag](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/50076171/7336896b-d597-4e3a-b4dd-9dab3ad8036e)
 
 ## Soal 10
+Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 ## Jawaban Soal 10
+pertama buka file pcap nya, lalu pencet protocol untuk mengurutkan protokolnya. Setelah itu cari protocol TELNET lalu follow tcp stream. Nanti terdapat beberapa username dan password lalu coba satu satu pada nc
+![10 1](https://github.com/WatShitTooYaa/Jarkom-Modul-1-IT05-2023/assets/106576632/2134ef9b-6bc0-4b80-b6cb-e41b0b66aca7)
+
+disini menemukan user:password yang benar yaitu dhafin:kesayangannyak0k0 lalu memasukkan nya ke nc
